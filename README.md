@@ -32,25 +32,20 @@ The project is built as a **real-world, hackathon-ready cybersecurity product**,
 
 ---
 
-## 🧩 Project Architecture
+## ▶️ Setup & Run Instructions
 
-phishdetect_ai/
-│
-├── app.py # Streamlit UI (main entry point)
-│
-├── ai/
-│ ├── model_loader.py # Loads BERT model & tokenizer
-│ └── ai_classifier.py # AI-based phishing prediction
-│
-├── rules/
-│ └── heuristics.py # Rule-based phishing signals
-│
-├── email_client/
-│ └── imap_fetcher.py # Fetch emails using IMAP
-│
-├── utils/ # Helper utilities
-│
-├── requirements.txt
-└── README.md
+### Create & Activate Virtual Environment (Recommended)
+
+#### Windows
+```bash
+python -m venv venv
+venv\Scripts\activate
+
+**
+Install Dependencies**
+pip install -r requirements.txt
+
+Run the Application
+python -m streamlit run app.py
 
 
